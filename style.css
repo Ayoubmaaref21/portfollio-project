@@ -1,0 +1,37 @@
+body {
+  background-color: #000000;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4rem;
+}
+header p {
+  color: white;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+@media (max-width: 710px) {
+  .nav {
+    display: none;
+  }
+  header p {
+    margin: 1rem auto;
+  }
+}
